@@ -67,9 +67,9 @@ kubectl create service nodeport ml-prediction --tcp=8000:8000
 kubectl get services
 ```
 ## Expected output:
-### NAME            TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
-###  kubernetes      ClusterIP   10.96.0.1      <none>        443/TCP          6h24m
-###  ml-prediction   NodePort    10.99.159.87   <none>        8000:31647/TCP   72s
+  NAME            TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+  kubernetes      ClusterIP   10.96.0.1      <none>        443/TCP          6h24m
+  ml-prediction   NodePort    10.99.159.87   <none>        8000:31647/TCP   72s
 
 ## 🌐 4. Prediction on Minikube NodePort
 ```sh
@@ -117,4 +117,3 @@ curl -X 'POST' \
   "PetalWidthCm": 0.2
 }'
 ```
-# Expected output: "Iris-setosa"
