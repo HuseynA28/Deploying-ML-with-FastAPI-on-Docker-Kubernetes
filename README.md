@@ -5,8 +5,7 @@
 Move to the 'kubernetes_notes' directory:
 
 ```sh
-mv 12_deploy_fastapi_on_docker_k8s/ 12
-cd 12
+cd Deploying-ML-with-FastAPI-on-Docker-Kubernetes
 ```
 
 ##🐋 2. Deploy on Docker
