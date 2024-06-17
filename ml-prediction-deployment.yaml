@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-prediction-deployment
+  labels:
+    app: ml-prediction
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ml-prediction
+  template:
+    metadata:
+      labels:
+        app: ml-prediction
+    spec:
+      containers:
+      - name: ml-prediction
+        image: ml-prediction-with-fastapi:1.0
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000

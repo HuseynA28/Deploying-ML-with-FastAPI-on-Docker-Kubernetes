@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ml-prediction-ingress
+spec:
+  rules:
+    - host: ml.prediction.vbo.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ml-prediction
+                port:
+                  number: 8000
