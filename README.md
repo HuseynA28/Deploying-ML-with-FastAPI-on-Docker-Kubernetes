@@ -1,4 +1,4 @@
-# 🚀 ML Model Deployment on Docker and Kubernetes
+## 🚀 ML Model Deployment on Docker and Kubernetes
 
 ## 📁 1. Navigate to `kubernetes_notes`
 
